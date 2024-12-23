@@ -1,0 +1,104 @@
+.header {
+    min-height: 89px;
+
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &-controls {
+        display: flex;
+        gap: 10px;
+    }
+
+    .navbar {
+        padding: 24px 0;
+    }
+    
+    .navbar-brand {
+        padding: 0;
+        height: 41px;
+    }
+
+    .navbar-toggler {
+        background-color: $text-white;
+        width: 48px;
+        height: 48px;
+        border-radius: 15px;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: none;
+
+        span {
+            height: 2px;
+            background-color: $secondary;
+            border-radius: 2px;
+        }
+
+        span:nth-child(1), span:nth-child(3) {
+            width: 22px;
+        }
+
+        span:nth-child(2) {
+            width: 15px;
+        }
+
+        @media (max-width: 990px) {
+            display: flex;
+        }
+    }
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                transition: color .3s;
+                font-size: 14px;
+                line-height: 140%;
+                font-weight: 550;
+                color: $text-white;
+                padding: 10px 15px;
+
+                &.active {
+                    color: $secondary-hovered;
+                }
+
+                &:hover {
+                    color: $secondary-hovered;
+                }
+            }
+
+            .dropdown-menu {
+                background-color: $text-white;
+
+                .dropdown-item {
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 500;
+                    color: $secondary;
+
+                    &.active {
+                        background-color: $text-white;
+                        color: $secondary-hovered;
+                    }
+    
+                    &:hover {
+                        background-color: $text-white;
+                        color: $secondary-hovered;
+                    }
+
+                    &:focus-visible {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}

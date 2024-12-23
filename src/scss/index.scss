@@ -1,0 +1,22 @@
+@import "./utils/reset";
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/bootstrap";
+
+@import "./template/base";
+@import "./template/header";
+@import "./template/footer";
+
+// ANIMATIONS
+@import "./libs/animate.min.css";
+@import "./libs/hover.css";
+
+// ELEMENTS
+
+
+// SECTIONS
+@import "./template/sections/hero.scss";
+
+
+// PAGES
+@import "./template/pages/main-page.scss";

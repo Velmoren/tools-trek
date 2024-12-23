@@ -1,0 +1,42 @@
+// // Variable overrides second
+
+$enable-shadows: true;
+$prefix: "tt-";
+
+$container-max-widths: (
+  xxs: 100%,
+  xs: 100%,
+  sm: 480px,
+  md: 714px,
+  lg: 930px,
+  xl: 1290px
+);
+
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 991px,
+  xl: 1320px,
+  xxl: 1920px,
+);
+
+$grid-gutter-width: 1.5rem;
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
