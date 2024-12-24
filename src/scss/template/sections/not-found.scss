@@ -24,8 +24,15 @@
     @media (max-width: 768px) {
         &-box {
             background-position: top center;
+            background-size: 360px;
             height: 480px;
             justify-content: flex-end;
+        }
+    }
+
+    @media (max-width: 380px) {
+        &-box {
+            background-size: contain; 
         }
     }
 }

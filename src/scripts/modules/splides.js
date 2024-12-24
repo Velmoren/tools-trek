@@ -8,6 +8,10 @@ export const splidesModule = () => {
         breakpoints: {
             1020: {
                 perPage : 2,
+                arrows: false,
+            },
+            991: {
+                arrows: true
             },
             820: {
                 arrows: false,
