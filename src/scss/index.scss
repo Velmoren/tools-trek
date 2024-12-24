@@ -10,13 +10,27 @@
 // ANIMATIONS
 @import "./libs/animate.min.css";
 @import "./libs/hover.css";
+@import "@splidejs/splide/css";
 
 // ELEMENTS
-
+@import "./template/elements/buttons.scss";
+@import "./template/elements/title.scss";
+@import "./template/elements/text.scss";
+@import "./template/elements/tabs.scss";
+@import "./template/elements/card.scss";
+@import "./template/elements/nav-link.scss";
+@import "./template/elements/form-select.scss";
+@import "./template/elements/form-control.scss";
+@import "./template/elements/form-check.scss";
 
 // SECTIONS
 @import "./template/sections/hero.scss";
-
+@import "./template/sections/assistance.scss";
+@import "./template/sections/collaboration.scss";
+@import "./template/sections/products.scss";
+@import "./template/sections/approach.scss";
+@import "./template/sections/pains.scss";
+@import "./template/sections/not-found.scss";
 
 // PAGES
 @import "./template/pages/main-page.scss";

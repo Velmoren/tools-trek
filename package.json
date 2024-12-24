@@ -1,5 +1,5 @@
 {
-  "name": "era-of-superio-dev",
+  "name": "tools-trek",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "vite": "^5.4.0"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "wow.js": "^1.2.2"

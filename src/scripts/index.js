@@ -1,7 +1,7 @@
-import {countersModule} from './modules/counters'
 import {animateModule} from './modules/animate'
-import {customTableModule} from './modules/custom-table'
+import { tabSelectModule } from './modules/tab-select'
+import { splidesModule } from './modules/splides'
 
-countersModule()
 animateModule()
-customTableModule()
+tabSelectModule()
+splidesModule()

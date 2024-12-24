@@ -1,15 +1,14 @@
 .header {
     min-height: 89px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
     &-box {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    &-logo {
-        display: flex;
-        align-items: center;
     }
 
     &-controls {
@@ -18,37 +17,41 @@
     }
 
     .navbar {
-        padding: 24px 0;
+        padding: 30px 0;
     }
     
     .navbar-brand {
+        display: block;
         padding: 0;
-        height: 41px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        @media (max-width: 990px) {
+            max-width: 124px;
+        }
     }
 
     .navbar-toggler {
-        background-color: $text-white;
-        width: 48px;
-        height: 48px;
+        background-color: $tt-white;
+        width: 34px;
+        height: 18px;
         border-radius: 15px;
         align-items: flex-end;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
-        gap: 5px;
         box-shadow: none;
+        padding: 0;
 
         span {
+            display: block;
             height: 2px;
-            background-color: $secondary;
+            min-height: 2px;
+            background-color: $tt-green;
             border-radius: 2px;
-        }
-
-        span:nth-child(1), span:nth-child(3) {
-            width: 22px;
-        }
-
-        span:nth-child(2) {
-            width: 15px;
+            width: 34px;
         }
 
         @media (max-width: 990px) {
@@ -60,38 +63,38 @@
         .nav-item {
             .nav-link {
                 transition: color .3s;
-                font-size: 14px;
-                line-height: 140%;
-                font-weight: 550;
-                color: $text-white;
-                padding: 10px 15px;
-
-                &.active {
-                    color: $secondary-hovered;
-                }
+                font-size: 16px;
+                line-height: 22px;
+                font-weight: 400;
+                color: $tt-black;
+                padding: 15px 20px;
 
                 &:hover {
-                    color: $secondary-hovered;
+                    color: $tt-green;
+                }
+
+                &.active, &:active {
+                    color: $tt-green-dark;
                 }
             }
 
             .dropdown-menu {
-                background-color: $text-white;
+                background-color: $tt-white;
 
                 .dropdown-item {
                     font-size: 16px;
                     line-height: 22px;
                     font-weight: 500;
-                    color: $secondary;
+                    // color: $secondary;
 
                     &.active {
-                        background-color: $text-white;
-                        color: $secondary-hovered;
+                        background-color: $tt-white;
+                        // color: $secondary-hovered;
                     }
     
                     &:hover {
-                        background-color: $text-white;
-                        color: $secondary-hovered;
+                        background-color: $tt-white;
+                        // color: $secondary-hovered;
                     }
 
                     &:focus-visible {

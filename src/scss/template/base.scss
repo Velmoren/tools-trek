@@ -1,9 +1,9 @@
 * {
-    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-family: 'Manrope', sans-serif;
 }
 
 body {
-    background-color: $text-white;
+    background-color: $tt-white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,9 +21,9 @@ main {
     flex-grow: 1;
 }
 
-.section {
-    padding-top: 90px;
-    padding-bottom: 90px;
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     @media (max-width: 480px) {
         padding-top: 75px;
@@ -36,12 +36,6 @@ main {
     }
 }
 
-.--bg-dark-blue {
-    background: $text-dark-blue;
-}
-.--bg-light-blue {
-    background: $text-light-blue;
-}
-.--bg-black {
-    background: $text-black;
+img {
+    max-width: 100%;
 }
