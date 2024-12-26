@@ -28,6 +28,15 @@
         justify-content: space-between;
     }
 
+    &--green-light {
+        background-color: $tt-green-light;
+        color: $tt-white;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     &--b-green {
         border: 2px solid $tt-green;
     }

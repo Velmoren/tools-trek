@@ -2,7 +2,7 @@
 $tt-transparent: transparent;
 $tt-white: rgba(255, 255, 255, 1);
 $tt-black: rgba(57, 57, 57, 1);
-$tt-green-light: rgb(73, 179, 72);
+$tt-green-light: rgba(235, 247, 235, 1);
 $tt-green: rgb(73, 179, 72);
 $tt-green-dark: rgba(51, 160, 50, 1);
 $tt-gray-light: rgb(250, 250, 250);
@@ -61,6 +61,7 @@ $gutters: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   20px: 20px,
+  28px: 28px,
   40px: 40px,
   60px: 60px
 );

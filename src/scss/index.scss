@@ -22,6 +22,7 @@
 @import "./template/elements/nav-link.scss";
 @import "./template/elements/form-select.scss";
 @import "./template/elements/form-control.scss";
+@import "./template/elements/form-control-box.scss";
 @import "./template/elements/form-check.scss";
 @import "./template/elements/form-group.scss";
 @import "./template/elements/badge.scss";
@@ -43,6 +44,9 @@
 @import "./template/sections/contacts.scss";
 @import "./template/sections/team.scss";
 @import "./template/sections/quality.scss";
+@import "./template/sections/migration-cards.scss";
+@import "./template/sections/blog.scss";
+@import "./template/sections/explore.scss";
 
 // PAGES
 @import "./template/pages/main-page.scss";

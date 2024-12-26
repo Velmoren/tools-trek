@@ -12,6 +12,8 @@ export default defineConfig({
         'contacts': resolve(__dirname, 'contacts.html'),
         'about-us': resolve(__dirname, 'about-us.html'),
         'solutions': resolve(__dirname, 'solutions.html'),
+        'migration': resolve(__dirname, 'migration.html'),
+        'blog': resolve(__dirname, 'blog.html'),
         '404': resolve(__dirname, '404.html'),
       },
     },
