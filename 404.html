@@ -6,8 +6,8 @@
   <link rel="icon" type="image/svg+xml" href="https://velmoren.github.io/tools-trek/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tools Trek</title>
-  <script type="module" crossorigin src="https://velmoren.github.io/tools-trek/assets/main-mr1i5a5D.js"></script>
-  <link rel="stylesheet" crossorigin href="https://velmoren.github.io/tools-trek/assets/main-BtYfwauJ.css">
+  <script type="module" crossorigin src="https://velmoren.github.io/tools-trek/assets/main-CbbhGKnu.js"></script>
+  <link rel="stylesheet" crossorigin href="https://velmoren.github.io/tools-trek/assets/main-BYE7GN81.css">
 </head>
 
 <body>
@@ -45,8 +45,8 @@
               </ul>
 
               <div class="header-controls">
-                <button class="btn btn-outline btn--md d-none d-lg-block">Get an opinion</button>
-                <button class="btn btn--md d-block d-lg-none">Wanna talk</button>
+                <button class="btn btn-outline btn--md d-none d-lg-block" data-bs-toggle="modal" href="#modal-feedback" role="button">Get an opinion</button>
+                <button class="btn btn--md d-block d-lg-none" data-bs-toggle="modal" href="#modal-feedback" role="button">Wanna talk</button>
               </div>
 
               <div class="header-socials d-flex d-lg-none">
@@ -115,6 +115,65 @@
         </div>
       </div>
     </footer>
+
+    <div class="modals">
+      <div class="modal modal-lg fade modal-feedback" id="modal-feedback" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+              <img src="https://velmoren.github.io/tools-trek/images/icons/close.svg" alt="close">
+            </div>
+
+            <div class="modal-body">
+              <h3 class="title title--sm title--green text-center mb-2">Leave your contact data</h3>
+
+              <p class="text text--extra-sm text--black text-center mb-3">
+                We will contact you and select an efficient solution
+              </p>
+
+              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+
+              <p class="text text--extra-sm text--black text-start w-100 mb-12px">
+                Are you already using the platforms?
+              </p>
+
+              <div class="form-group mb-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="platforms" id="not-yet-radio" value="1">
+                  <label class="form-check-label" for="not-yet-radio">Not yet</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="platforms" id="monday-radio" value="2">
+                  <label class="form-check-label" for="monday-radio">monday.com</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="platforms" id="atlassian-radio" value="3">
+                  <label class="form-check-label" for="atlassian-radio">Atlassian</label>
+                </div>
+              </div>
+
+              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+
+              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+
+              <textarea class="form-control mb-12px" rows="4" placeholder="How can we help?"></textarea>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="monday-form-check">
+                <label class="form-check-label" for="monday-form-check">
+                  By pressing the button, you agree to the personal data processing policy.
+                  <br>
+                  We do not send advertisement materials and spam.
+                </label>
+              </div>
+
+              <button class="btn btn--md mt-32px">Contact me</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </body>
