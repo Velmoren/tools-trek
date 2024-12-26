@@ -33,32 +33,6 @@
                     justify-content: center;
                     height: 150px;
                 }
-
-                &-list {
-                    ul {
-                        padding-left: 20px;
-
-                        li {
-                            position: relative;
-
-                            &::before {
-                                content: "";
-                                display: block;
-                                width: 10px;
-                                height: 10px;
-                                border-radius: 50%;
-                                background-color: $tt-green;
-                                position: absolute;
-                                top: 2px;
-                                left: -20px;
-                            }
-
-                            &:not(:last-child) {
-                                margin-bottom: 12px;
-                            }
-                        }
-                    }
-                }
             }
 
             &__controls {

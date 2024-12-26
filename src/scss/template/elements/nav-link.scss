@@ -4,4 +4,12 @@
     gap: 12px;
     text-decoration: none;
     color: $tt-green;
+
+    &--outline {
+        color: inherit;
+    }
+
+    &:hover {
+        color: $tt-green-dark; 
+    }
 }

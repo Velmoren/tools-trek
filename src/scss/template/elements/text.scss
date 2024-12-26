@@ -1,4 +1,6 @@
 .text {
+    text-decoration: none;
+
     &--lg {
         font-size: 32px;
         line-height: 36px;
@@ -29,6 +31,10 @@
 
     &--green {
         color: $tt-green;
+    }
+
+    &--bold {
+        font-weight: 600;
     }
 
     @media (max-width: 768px) {

@@ -52,6 +52,12 @@
             line-height: 38px;
             font-weight: 600; 
         }
+
+        &--md {
+            font-size: 32px;
+            line-height: 44px;
+            font-weight: 500;
+        }
     }
 
     @media (max-width: 480px) {

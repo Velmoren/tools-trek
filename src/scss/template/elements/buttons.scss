@@ -11,6 +11,9 @@
     cursor: pointer;
     transition: .3s;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
         background-color: $tt-green-dark;

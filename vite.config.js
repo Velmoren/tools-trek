@@ -6,8 +6,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        404: resolve(__dirname, '404.html'),
+        'main': resolve(__dirname, 'index.html'),
+        'monday': resolve(__dirname, 'monday.html'),
+        'atlassian': resolve(__dirname, 'atlassian.html'),
+        'contacts': resolve(__dirname, 'contacts.html'),
+        'about-us': resolve(__dirname, 'about-us.html'),
+        'solutions': resolve(__dirname, 'solutions.html'),
+        '404': resolve(__dirname, '404.html'),
       },
     },
   },

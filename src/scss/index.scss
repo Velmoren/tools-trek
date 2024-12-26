@@ -15,6 +15,7 @@
 // ELEMENTS
 @import "./template/elements/buttons.scss";
 @import "./template/elements/title.scss";
+@import "./template/elements/title-group.scss";
 @import "./template/elements/text.scss";
 @import "./template/elements/tabs.scss";
 @import "./template/elements/card.scss";
@@ -22,6 +23,10 @@
 @import "./template/elements/form-select.scss";
 @import "./template/elements/form-control.scss";
 @import "./template/elements/form-check.scss";
+@import "./template/elements/form-group.scss";
+@import "./template/elements/badge.scss";
+@import "./template/elements/list.scss";
+@import "./template/elements/modal.scss";
 
 // SECTIONS
 @import "./template/sections/hero.scss";
@@ -29,8 +34,15 @@
 @import "./template/sections/collaboration.scss";
 @import "./template/sections/products.scss";
 @import "./template/sections/approach.scss";
-@import "./template/sections/pains.scss";
 @import "./template/sections/not-found.scss";
+@import "./template/sections/platforms-hero.scss";
+@import "./template/sections/partners.scss";
+@import "./template/sections/solutions.scss";
+@import "./template/sections/form.scss";
+@import "./template/sections/sign.scss";
+@import "./template/sections/contacts.scss";
+@import "./template/sections/team.scss";
+@import "./template/sections/quality.scss";
 
 // PAGES
 @import "./template/pages/main-page.scss";

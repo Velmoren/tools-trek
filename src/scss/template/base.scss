@@ -19,6 +19,12 @@ body {
 
 main {
     flex-grow: 1;
+
+    padding-top: 120px;
+
+    @media (max-width: 991px) {
+        padding-top: 0;
+    }
 }
 
 section {
