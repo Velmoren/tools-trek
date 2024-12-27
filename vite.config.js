@@ -14,6 +14,7 @@ export default defineConfig({
         'solutions': resolve(__dirname, 'solutions.html'),
         'migration': resolve(__dirname, 'migration.html'),
         'blog': resolve(__dirname, 'blog.html'),
+        'blog-item': resolve(__dirname, 'blog-item.html'),
         '404': resolve(__dirname, '404.html'),
       },
     },

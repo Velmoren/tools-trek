@@ -33,6 +33,10 @@
         color: $tt-green;
     }
 
+    &--gray {
+        color: $tt-gray-dark;
+    }
+
     &--bold {
         font-weight: 600;
     }
@@ -54,7 +58,7 @@
         }
     
         &--extra-sm {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 16px;
         }
     }
