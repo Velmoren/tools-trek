@@ -1,4 +1,9 @@
 .blog {
+    &__badge-list {
+        max-width: 820px;
+        margin: 0 auto;
+    }
+    
     &-hero {
         &__box {
             display: flex;
