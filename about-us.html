@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ToolsTrek" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tools Trek</title>
 </head>
@@ -106,8 +111,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-1.png" alt="image-1">
+                <div class="team__card-image --bg-1">
+                  <!-- <img src="/images/about-us/image-1.png" alt="image-1"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Dmitry Bebriss</h6>
@@ -119,8 +124,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-2.png" alt="image-2">
+                <div class="team__card-image --bg-2">
+                  <!-- <img src="/images/about-us/image-2.png" alt="image-2"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Nastja Kozlova</h6>
@@ -132,8 +137,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-3.png" alt="image-3">
+                <div class="team__card-image --bg-3">
+                  <!-- <img src="/images/about-us/image-3.png" alt="image-3"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Irina Pozdnyakova</h6>
@@ -145,8 +150,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-4.png" alt="image-4">
+                <div class="team__card-image --bg-4">
+                  <!-- <img src="/images/about-us/image-4.png" alt="image-4"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Yana Levkovich</h6>
@@ -158,8 +163,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-5.png" alt="image-5">
+                <div class="team__card-image --bg-5">
+                  <!-- <img src="/images/about-us/image-5.png" alt="image-5"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Elvin Abbasov</h6>
@@ -171,8 +176,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-6.png" alt="image-6">
+                <div class="team__card-image --bg-6">
+                  <!-- <img src="/images/about-us/image-6.png" alt="image-6"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Viktoriya Zahumennyk</h6>
@@ -184,8 +189,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-7.png" alt="image-7">
+                <div class="team__card-image --bg-7">
+                  <!-- <img src="/images/about-us/image-7.png" alt="image-7"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Olga Frolova</h6>
@@ -197,8 +202,8 @@
 
             <div class="col col-12 col-xs-6 col-md-4 col-lg-3">
               <div class="team__card">
-                <div class="team__card-image">
-                  <img src="/images/about-us/image-8.png" alt="image-8">
+                <div class="team__card-image --bg-8">
+                  <!-- <img src="/images/about-us/image-8.png" alt="image-8"> -->
                 </div>
                 <div class="team__card-description">
                   <h6 class="title title--extra-sm title--black text-center">Elina Krumina-Priede</h6>
@@ -269,24 +274,40 @@
 
               <div class="form-group mb-3">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="platforms" id="not-yet-radio" value="1">
+                  <input class="form-check-input radio-box-item" type="radio" name="platforms" id="not-yet-radio" value="1" checked>
                   <label class="form-check-label" for="not-yet-radio">Not yet</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="platforms" id="monday-radio" value="2">
+                  <input class="form-check-input radio-box-item" type="radio" name="platforms" id="monday-radio" value="2">
                   <label class="form-check-label" for="monday-radio">monday.com</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="platforms" id="atlassian-radio" value="3">
+                  <input class="form-check-input radio-box-item" type="radio" name="platforms" id="atlassian-radio" value="3">
                   <label class="form-check-label" for="atlassian-radio">Atlassian</label>
                 </div>
               </div>
 
-              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+              <div class="form-box mb-12px">
+                <div class="form-box__item form-box__item--1 d-block">
+                  <input class="form-control mb-3" type="email" placeholder="your@mail.com">
+    
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
 
-              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+                <div class="form-box__item form-box__item--2 d-none">
+                  <input class="form-control mb-3" type="email" placeholder="monday.com address">
 
-              <textarea class="form-control mb-12px" rows="4" placeholder="How can we help?"></textarea>
+                  <input class="form-control mb-3" type="email" placeholder="your@mail.com">
+    
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
+
+                <div class="form-box__item form-box__item--3 d-none">
+                  <input class="form-control mb-3" type="email" placeholder="your@mail.com">
+    
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
+              </div>
 
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="monday-form-check">

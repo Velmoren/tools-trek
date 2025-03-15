@@ -17,6 +17,7 @@
         background: $tt-white;
         border-radius: 4px;
         border: 1px solid $tt-black;
+        cursor: pointer;
 
         &::after {
             content: "";
@@ -47,6 +48,7 @@
         border: 2px solid $tt-green;
         transition: .0s;
         margin: 0;
+        cursor: pointer;
 
         &::after {
             content: "";
@@ -65,6 +67,10 @@
             width: 10px;
             height: 10px;
             transition: .0s;
+        }
+
+        & ~ label {
+            cursor: pointer;
         }
     }
 

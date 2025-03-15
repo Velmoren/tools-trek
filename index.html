@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="ToolsTrek" />
+  <link rel="manifest" href="/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tools Trek</title>
 </head>
@@ -17,8 +22,9 @@
             <a class="navbar-brand logo" href="/tools-trek/">
               <img class="logo-image" src="/images/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span></span>
               <span></span>
               <span></span>
@@ -43,8 +49,10 @@
               </ul>
 
               <div class="header-controls">
-                <button class="btn btn-outline btn--md d-none d-lg-block" data-bs-toggle="modal" href="#modal-feedback" role="button">Get an opinion</button>
-                <button class="btn btn--md d-block d-lg-none" data-bs-toggle="modal" href="#modal-feedback" role="button">Wanna talk</button>
+                <button class="btn btn-outline btn--md d-none d-lg-block" data-bs-toggle="modal" href="#modal-feedback"
+                  role="button">Get an opinion</button>
+                <button class="btn btn--md d-block d-lg-none" data-bs-toggle="modal" href="#modal-feedback"
+                  role="button">Wanna talk</button>
               </div>
 
               <div class="header-socials d-flex d-lg-none">
@@ -60,7 +68,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero wow animate__animated animate__fadeIn" data-wow-duration="2s">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -102,7 +110,7 @@
       </section>
 
       <section class="assistance">
-        <div class="container">
+        <div class="container  wow animate__animated animate__fadeInUp">
           <div class="row mb-40px d-none d-md-block">
             <div class="col">
               <h2 class="title title--md text-center">
@@ -414,7 +422,8 @@
         <div class="container">
           <div class="row mb-40px">
             <div class="col">
-              <h2 class="title title--extra-lg title--white text-center mb-3 wow animate__animated animate__bounceInRight">
+              <h2
+                class="title title--extra-lg title--white text-center mb-3 wow animate__animated animate__bounceInRight">
                 Our products are designed <br> to make your business manageable
               </h2>
 
@@ -464,7 +473,8 @@
                         <h6 class="title title--extra-sm mb-12px">Sales and marketing</h6>
 
                         <ul class="list list--sm list--circle">
-                          <li class="text text--extra-sm">Record the course, invite the participants and track the results</li>
+                          <li class="text text--extra-sm">Record the course, invite the participants and track the
+                            results</li>
                           <li class="text text--extra-sm">Onboarding</li>
                           <li class="text text--extra-sm">Turn the annual appraisals into a game</li>
                         </ul>
@@ -568,20 +578,12 @@
               </div>
 
               <div class="splide__arrows splide__arrows--ltr">
-                <button
-                  class="splide__arrow splide__arrow--prev"
-                  type="button"
-                  aria-label="Previous slide"
-                  aria-controls="splide01-track"
-                >
+                <button class="splide__arrow splide__arrow--prev" type="button" aria-label="Previous slide"
+                  aria-controls="splide01-track">
                   <img src="/images/icons/slider-arrow.svg" alt="slider-arrow">
                 </button>
-                <button
-                  class="splide__arrow splide__arrow--next"
-                  type="button"
-                  aria-label="Next slide"
-                  aria-controls="splide01-track"
-                >
+                <button class="splide__arrow splide__arrow--next" type="button" aria-label="Next slide"
+                  aria-controls="splide01-track">
                   <img src="/images/icons/slider-arrow.svg" alt="slider-arrow">
                 </button>
               </div>
@@ -606,7 +608,7 @@
                     just predictable and transparent, but also cost-saving.
                   </p>
                 </div>
-  
+
                 <button class="btn btn--md">More about us</button>
               </div>
               <div class="col col-12 col-lg-4 d-none d-lg-block wow animate__animated animate__bounceInRight">
@@ -667,7 +669,7 @@
                   <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="pains-form-check">
                     <label class="form-check-label" for="pains-form-check">
-                      By pressing the button, you agree to the personal data processing policy. 
+                      By pressing the button, you agree to the personal data processing policy.
                       <br>
                       We do not send advertisement materials and spam.
                     </label>
@@ -716,7 +718,8 @@
     </footer>
 
     <div class="modals">
-      <div class="modal modal-lg fade modal-feedback" id="modal-feedback" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+      <div class="modal modal-lg fade modal-feedback" id="modal-feedback" aria-hidden="true"
+        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-close" data-bs-dismiss="modal" aria-label="Close">
@@ -738,24 +741,43 @@
 
               <div class="form-group mb-3">
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="platforms" id="not-yet-radio" value="1">
+                  <input class="form-check-input radio-box-item" type="radio" name="platforms" id="not-yet-radio"
+                    value="1" checked>
                   <label class="form-check-label" for="not-yet-radio">Not yet</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="platforms" id="monday-radio" value="2">
+                  <input class="form-check-input radio-box-item" type="radio" name="platforms" id="monday-radio"
+                    value="2">
                   <label class="form-check-label" for="monday-radio">monday.com</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="platforms" id="atlassian-radio" value="3">
+                  <input class="form-check-input radio-box-item" type="radio" name="platforms" id="atlassian-radio"
+                    value="3">
                   <label class="form-check-label" for="atlassian-radio">Atlassian</label>
                 </div>
               </div>
 
-              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+              <div class="form-box mb-12px">
+                <div class="form-box__item form-box__item--1 d-block">
+                  <input class="form-control mb-3" type="email" placeholder="your@mail.com">
 
-              <input class="form-control mb-3" type="text" placeholder="How can we call you?">
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
 
-              <textarea class="form-control mb-12px" rows="4" placeholder="How can we help?"></textarea>
+                <div class="form-box__item form-box__item--2 d-none">
+                  <input class="form-control mb-3" type="email" placeholder="monday.com address">
+
+                  <input class="form-control mb-3" type="email" placeholder="your@mail.com">
+
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
+
+                <div class="form-box__item form-box__item--3 d-none">
+                  <input class="form-control mb-3" type="email" placeholder="your@mail.com">
+
+                  <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                </div>
+              </div>
 
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="monday-form-check">
