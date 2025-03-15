@@ -3,7 +3,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 16px;
+        gap: 12px;
 
         &::-webkit-scrollbar {
             width: 0;
@@ -46,9 +46,19 @@
         img {
             width: 100%;
         }
+
+        &__item {
+            &__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                align-items: flex-start;
+            }
+        }
     }
 
-    @media (max-width: 991px) {
+    @media (max-width: 1100px) {
         &-list {
             justify-content: flex-start;
             overflow-y: auto;
