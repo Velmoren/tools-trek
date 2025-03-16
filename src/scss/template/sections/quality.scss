@@ -79,59 +79,107 @@
                     transition: background-image 1.5s;
                     position: relative;
 
-                    svg {
+                    &::after {
+                        content: '';
                         position: absolute;
-                        z-index: -1;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        z-index: 1;
 
-                        path {
-                            transform: stroke 1.5s;
-                        }
+                        transition: opacity 1.5s;
                     }
 
-                    &.colored {
-                        svg {
-                            path {
-                                stroke: $tt-green;
-                            }
-                        }
+                    svg {
+                        position: absolute;
                     }
 
                     &--1 {
                         background-image: url('/images/quality/image-1/image-1.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-1/image-1-color.svg');
                         }
 
                         svg {
                             left: -115px;
                             top: 100px;
+
+                            path {
+                                animation: 1s infinite linear runToRight, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToRight, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
 
                     &--2 {
                         background-image: url('/images/quality/image-1/image-2.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-1/image-2-color.svg');
                         }
 
                         svg {
                             left: -35px;
                             top: 70px;
+
+                            path {
+                                animation: 1s infinite linear runToLeft, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToLeft, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
 
                     &--3 {
                         background-image: url('/images/quality/image-1/image-3.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-1/image-3-color.svg');
                         }
 
                         svg {
                             left: -115px;
                             top: -5px;
+
+                            path {
+                                animation: 1s infinite linear runToRight, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToRight, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
                 }
@@ -246,28 +294,29 @@
                     background-size: contain;
                     position: relative;
 
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        left: 0;
+                        bottom: 0;
+                        opacity: 0;
+                        z-index: 1;
+
+                        transition: opacity 1.5s;
+                    }
+
                     svg {
                         position: absolute;
                         z-index: -1;
-
-                        path {
-                            transform: stroke 1.5s;
-                        }
-                    }
-
-                    &.colored {
-                        svg {
-                            path {
-                                stroke: $tt-green;
-                            }
-                        }
                     }
 
                     &--1 {
                         transition: background-image 1.5s;
                         background-image: url('/images/quality/image-2/image-1.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-2/image-1-color.svg');
                         }
 
@@ -275,6 +324,22 @@
                             right: -110px;
                             top: 70px;
                             width: 105px;
+
+                            path {
+                                animation: 1s infinite linear runToRight, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToRight, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
 
@@ -282,7 +347,7 @@
                         transition: background-image 1.5s;
                         background-image: url('/images/quality/image-2/image-2.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-2/image-2-color.svg');
                         }
 
@@ -290,6 +355,22 @@
                             right: -33px;
                             top: 70px;
                             width: 30px;
+
+                            path {
+                                animation: 1s infinite linear runToLeft, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToLeft, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
 
@@ -297,7 +378,7 @@
                         transition: background-image 1.5s;
                         background-image: url('/images/quality/image-2/image-3.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-2/image-3-color.svg');
                         }
 
@@ -305,6 +386,23 @@
                             left: -35px;
                             top: 65px;
                             width: 30px;
+
+                            path {
+                                animation: 1s infinite linear runToLeft, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+           
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToLeft, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
 
@@ -312,7 +410,7 @@
                         transition: background-image 1.5s;
                         background-image: url('/images/quality/image-2/image-4.svg');
 
-                        &.colored {
+                        &::after {
                             background-image: url('/images/quality/image-2/image-4-color.svg');
                         }
 
@@ -320,6 +418,22 @@
                             left: -115px;
                             top: 30px;
                             width: 105px;
+
+                            path {
+                                animation: 1s infinite linear runToRight, 1.5s addColor forwards
+                            }
+                        }
+
+                        &.colored {
+                            &::after {
+                                opacity: 1;
+                            }
+
+                            svg {
+                                path {
+                                    animation: 1s infinite linear runToRight, 1.5s removeColor forwards
+                                }
+                            }
                         }
                     }
                 }
@@ -331,7 +445,7 @@
                     background-position: 15px bottom;
 
                     .image-box {
-                        width: 120px; 
+                        width: 120px;
 
                         &--2 {
                             margin-top: 80px;
@@ -430,4 +544,45 @@
             }
         }
     }
-} 
+}
+
+
+@keyframes runToRight {
+    from {
+        stroke-dashoffset: 16.98
+    }
+
+    to {
+        stroke-dashoffset: 0
+    }
+}
+
+@keyframes runToLeft {
+    from {
+        stroke-dashoffset: 0
+    }
+
+    to {
+        stroke-dashoffset: 16.98
+    }
+}
+
+@keyframes addColor {
+    from {
+        stroke: $tt-green;
+    }
+
+    to {
+        stroke: $tt-black;
+    }
+}
+
+@keyframes removeColor {
+    from {
+        stroke: $tt-black;
+    }
+
+    to {
+        stroke: $tt-green;
+    }
+}
