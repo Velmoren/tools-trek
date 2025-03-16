@@ -45,3 +45,23 @@ section {
 img {
     max-width: 100%;
 }
+
+.line--1 {
+    animation: changeColor 15s infinite;
+    animation-delay: 0s;
+}
+
+@keyframes changeColor {
+    0% {
+        stroke: #393939;
+    }
+    13.33% {
+        stroke: #49B348;
+    }
+    26.66% {
+        stroke: #393939;
+    }
+    100% {
+        stroke: #393939;
+    }
+}
