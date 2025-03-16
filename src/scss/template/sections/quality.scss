@@ -61,37 +61,23 @@
                 align-items: flex-start;
                 justify-content: flex-end;
 
-                .image--1__el {
+                .image-box {
                     width: 136px;
                     height: calc((136 * 3) + (20 * 2));
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
                     gap: 20px;
+                }
 
-                    &--item {
-                        width: 136px;
-                        height: 136px;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        background-size: contain;
-                        transition: background-image 1.5s;
-                        position: relative;
-
-                        svg {
-                            path {
-                                transform: stroke 1.5s;
-                            }
-                        }
-
-                        &.colored {
-                            svg {
-                                path {
-                                    stroke: $tt-green;
-                                }
-                            }
-                        }
-                    }
+                .image-item {
+                    width: 136px;
+                    height: 136px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    transition: background-image 1.5s;
+                    position: relative;
 
                     &--1 {
                         background-image: url('/images/quality/image-1/image-1.svg');
@@ -141,13 +127,13 @@
                     height: 410px;
                     background-size: 400px;
 
-                    .image--1__el {
+                    .image-box {
                         width: 120px;
+                    }
 
-                        &--item {
-                            width: 120px;
-                            height: 120px;
-                        }
+                    .image-item {
+                        width: 120px;
+                        height: 120px;
 
                         &--1 {
                             svg {
@@ -180,13 +166,13 @@
                     height: 314px;
                     background-size: 300px;
 
-                    .image--1__el {
+                    .image-box {
                         width: 90px;
+                    }
 
-                        &--item {
-                            width: 90px;
-                            height: 90px;
-                        }
+                    .image-item {
+                        width: 90px;
+                        height: 90px;
 
                         &--1 {
                             svg {
@@ -214,6 +200,208 @@
                     }
                 }
             }
+
+            &.image--2 {
+                width: 510px;
+                height: 560px;
+                background-image: url('/images/quality/image-6.png');
+                background-repeat: no-repeat;
+                background-position: 8px bottom;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .image-box {
+                    width: 136px;
+                    height: calc((136 * 3) + (20 * 2));
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 20px;
+
+                    &--2 {
+                        margin-top: 80px;
+                    }
+                }
+
+                .image-item {
+                    width: 136px;
+                    height: 136px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    position: relative;
+
+                    svg {
+                        position: absolute;
+                        z-index: -1;
+                    }
+
+                    &--1 {
+                        transition: background-image 1.5s;
+                        background-image: url('/images/quality/image-2/image-1.svg');
+
+                        &.colored {
+                            background-image: url('/images/quality/image-2/image-1-color.svg');
+                        }
+
+                        svg {
+                            right: -110px;
+                            top: 70px;
+                            width: 105px;
+                        }
+                    }
+
+                    &--2 {
+                        transition: background-image 1.5s;
+                        background-image: url('/images/quality/image-2/image-2.svg');
+
+                        &.colored {
+                            background-image: url('/images/quality/image-2/image-2-color.svg');
+                        }
+
+                        svg {
+                            right: -33px;
+                            top: 70px;
+                            width: 30px;
+                        }
+                    }
+
+                    &--3 {
+                        transition: background-image 1.5s;
+                        background-image: url('/images/quality/image-2/image-3.svg');
+
+                        &.colored {
+                            background-image: url('/images/quality/image-2/image-3-color.svg');
+                        }
+
+                        svg {
+                            left: -35px;
+                            top: 65px;
+                            width: 30px;
+                        }
+                    }
+
+                    &--4 {
+                        transition: background-image 1.5s;
+                        background-image: url('/images/quality/image-2/image-4.svg');
+
+                        &.colored {
+                            background-image: url('/images/quality/image-2/image-4-color.svg');
+                        }
+
+                        svg {
+                            left: -115px;
+                            top: 30px;
+                            width: 105px;
+                        }
+                    }
+                }
+
+                @media (max-width: 1320px) {
+                    width: 420px;
+                    height: 470px;
+                    background-size: 400px;
+                    background-position: 15px bottom;
+
+                    .image-box {
+                        width: 120px; 
+
+                        &--2 {
+                            margin-top: 80px;
+                        }
+                    }
+
+                    .image-item {
+                        width: 120px;
+                        height: 120px;
+
+                        &--1 {
+                            svg {
+                                right: -100px;
+                                top: 62px;
+                                width: 105px;
+                            }
+                        }
+
+                        &--2 {
+                            svg {
+                                right: -30px;
+                                top: 62px;
+                                width: 27px;
+                            }
+                        }
+
+                        &--3 {
+                            svg {
+                                left: -30px;
+                                top: 65px;
+                                width: 27px;
+                            }
+                        }
+
+                        &--4 {
+                            svg {
+                                left: -90px;
+                                top: 20px;
+                                width: 105px;
+                            }
+                        }
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    width: 320px;
+                    height: 360px;
+                    background-size: 300px;
+                    background-position: 10px bottom;
+
+                    .image-box {
+                        width: 90px;
+
+                        &--2 {
+                            margin-top: 45px;
+                        }
+                    }
+
+                    .image-item {
+                        width: 90px;
+                        height: 90px;
+
+                        &--1 {
+                            svg {
+                                right: -75px;
+                                top: 45px;
+                                width: 80px;
+                            }
+                        }
+
+                        &--2 {
+                            svg {
+                                right: -20px;
+                                top: 45px;
+                                width: 20px;
+                            }
+                        }
+
+                        &--3 {
+                            svg {
+                                left: -20px;
+                                top: 60px;
+                                width: 25px;
+                            }
+                        }
+
+                        &--4 {
+                            svg {
+                                left: -70px;
+                                top: 15px;
+                                width: 80px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-}
+} 

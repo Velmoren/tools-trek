@@ -1,4 +1,4 @@
-export const animateImagesFunc = ({wrapper, element}) => {
+export const animateImagesFunc = ({wrapper, element, duration}) => {
     const images = document.querySelectorAll(wrapper)
 
     if (images.length) {
@@ -35,7 +35,7 @@ export const animateImagesFunc = ({wrapper, element}) => {
                 } else {
                     unColoredImage(showedElem)
                 }
-            }, 3000)
+            }, duration)
         })
     }
 }
