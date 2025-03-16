@@ -75,12 +75,12 @@
                         background-repeat: no-repeat;
                         background-position: center;
                         background-size: contain;
-                        transition: background-image .7s;
+                        transition: background-image 1.5s;
                         position: relative;
 
                         svg {
                             path {
-                                transform: stroke .7s;
+                                transform: stroke 1.5s;
                             }
                         }
 
@@ -147,6 +147,30 @@
                         &--item {
                             width: 120px;
                             height: 120px;
+                        }
+
+                        &--1 {
+                            svg {
+                                left: -100px;
+                                top: 90px;
+                                width: 95px;
+                            }
+                        }
+
+                        &--2 {
+                            svg {
+                                left: -30px;
+                                top: 62px;
+                                width: 25px;
+                            }
+                        }
+
+                        &--3 {
+                            svg {
+                                left: -100px;
+                                top: -15px;
+                                width: 95px;
+                            }
                         }
                     }
                 }
