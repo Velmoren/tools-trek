@@ -79,6 +79,23 @@
                     transition: background-image 1.5s;
                     position: relative;
 
+                    svg {
+                        position: absolute;
+                        z-index: -1;
+
+                        path {
+                            transform: stroke 1.5s;
+                        }
+                    }
+
+                    &.colored {
+                        svg {
+                            path {
+                                stroke: $tt-green;
+                            }
+                        }
+                    }
+
                     &--1 {
                         background-image: url('/images/quality/image-1/image-1.svg');
 
@@ -87,7 +104,6 @@
                         }
 
                         svg {
-                            position: absolute;
                             left: -115px;
                             top: 100px;
                         }
@@ -101,7 +117,6 @@
                         }
 
                         svg {
-                            position: absolute;
                             left: -35px;
                             top: 70px;
                         }
@@ -115,7 +130,6 @@
                         }
 
                         svg {
-                            position: absolute;
                             left: -115px;
                             top: -5px;
                         }
@@ -235,6 +249,18 @@
                     svg {
                         position: absolute;
                         z-index: -1;
+
+                        path {
+                            transform: stroke 1.5s;
+                        }
+                    }
+
+                    &.colored {
+                        svg {
+                            path {
+                                stroke: $tt-green;
+                            }
+                        }
                     }
 
                     &--1 {
